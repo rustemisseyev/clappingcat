@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 public class ClientEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayer(ClappingCatModel.LAYER, ClappingCatModel::createBodyLayer);
+        event.registerLayerDefinition(ClappingCatModel.LAYER, ClappingCatModel::createBodyLayer);
     }
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
